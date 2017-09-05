@@ -1,0 +1,8 @@
+<carousel [interval]="10000">
+    <slide *ngFor="let slide of slides;let i = Index">
+        <img [src]="slide.image">
+        <!--<div [hidden]="slides.length == 1" class="carousel-caption" style="background-color:grey">            
+            {{i+1}} of {{slides.length}}
+        </div>-->
+    </slide>
+</carousel>
